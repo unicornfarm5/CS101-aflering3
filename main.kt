@@ -66,7 +66,7 @@ fun main() {
     println("opgave 4")
     val words = listOf("apple", "banana", "apple", "orange", "banana", "apple", "orange", "banana", "apple","banana", "apple", "orange", "banana","banana", "apple", "orange", "apple", "orange", "banana")
 
-    //kode ændret til at håndtere strings istedet - men fra https://www.baeldung.com/kotlin/frequency-map hvor det er til int
+    //kode ændret til at håndtere strings istedet for int - fra https://www.baeldung.com/kotlin/frequency-map 
         fun getFrequencyMap(words: List<String>): MutableMap<String, Int> {
             val map = mutableMapOf<String, Int>()
             for (word in words) {
@@ -90,9 +90,10 @@ fun main() {
     val plasticBag = Product("plastic bag", 100)
 
 
-    //tilføjer 50 plastikposer til lager
+    //tilføjer 50 plastikposer til lager for at teste addToAmount
     plasticBag.addToAmountInStock(50)
 
+    //printer det opdaterede antal plastikposer - nu er der 150 på lager
     println(plasticBag.disPlayIncventory())
 
 }
